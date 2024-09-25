@@ -71,7 +71,7 @@ export const FloatingNav = ({
           border: "1px solid rgba(255, 255, 255, 0.125)",
         }}
       >
-        {navItems.map((navItem: any, idx: number) => (
+        {navItems.map((navItem: { name: string; link: string; }, idx: number) => (
           <Link
             key={`link=${idx}`}
             href={navItem.link}
@@ -79,9 +79,7 @@ export const FloatingNav = ({
               "relative dark:text-neutral-50 items-center  flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500"
             )}
           >
-            <span className="block sm:hidden">{navItem.icon}</span>
-            {/* add !cursor-pointer */}
-            {/* remove hidden sm:block for the mobile responsive */}
+            {/* <span className="block sm:hidden">{navItem.icon}</span> */}
             <span className=" text-sm !cursor-pointer">{navItem.name}</span>
           </Link>
         ))}
