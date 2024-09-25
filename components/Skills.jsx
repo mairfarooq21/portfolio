@@ -1,10 +1,5 @@
 import React from "react";
-import { workExperience } from "@/data";
-import { Button } from "./ui/MovingBorders";
-
-import { FaLocationArrow } from "react-icons/fa6";
 import { skills } from "@/data";
-import { PinContainer } from "./ui/Pin";
 
 const Skills = () => {
     return (

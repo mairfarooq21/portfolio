@@ -1,7 +1,4 @@
-import { gridItems } from "@/data";
 import React from "react";
-import { workExperience } from "@/data";
-import { Button } from "./ui/MovingBorders";
 
 const About = () => {
   return (

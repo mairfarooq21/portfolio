@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { FaLocationArrow } from "react-icons/fa6";
 import { IoCopyOutline } from "react-icons/io5";
 import { socialMedia } from "@/data";
 import MagicButton from "./MagicButton";
@@ -10,14 +9,6 @@ const Footer = () => {
   };
 
   const [copied, setCopied] = useState(false);
-
-  const defaultOptions = {
-    loop: copied,
-    autoplay: copied,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
 
   const handleCopy = () => {
     const text = "mairfarooq21@gmail.com";
