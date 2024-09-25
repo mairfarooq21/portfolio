@@ -3,6 +3,7 @@
 import { FaLocationArrow } from "react-icons/fa6";
 import { projects } from "@/data";
 import { PinContainer } from "./ui/Pin";
+import Image from 'next/image';
 
 const Projects = () => {
   const handleClick = (link: string) => {
@@ -33,8 +34,9 @@ const Projects = () => {
                 >
                   <img src="/bg.png" alt="bgimg" />
                 </div>
-                <img
+                <Image
                   src={item.img}
+                  fill 
                   alt="cover"
                   className="z-10 absolute bottom-0"
                 />
