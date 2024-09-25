@@ -32,11 +32,12 @@ const Projects = () => {
                   className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                   style={{ backgroundColor: "#13162D" }}
                 >
-                  <img src="/bg.png" alt="bgimg" />
+                  <Image src="/bg.png" alt="bgimg" fill sizes="100vw" />
                 </div>
                 <Image
                   src={item.img}
                   fill 
+                  sizes="100vw"
                   alt="cover"
                   className="z-10 absolute bottom-0"
                 />
