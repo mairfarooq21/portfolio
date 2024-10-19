@@ -2,13 +2,13 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="py-20 w-full">
-      <h1 className="heading justify-start">
+    <div className="lg:pt-[70px] w-full">
+      <h1 className="heading justify-start pt-52 md:pt-0 text-3xl md:text-3xl lg:text-[43px]">
         About 
       </h1>
 
-      <div className="w-full mt-12 grid lg:grid-cols-1 grid-cols-1 gap-10">
-        <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-xl">I am a dedicated and passionate web developer with a deep focus on building dynamic, efficient, and user-centric web applications. My expertise spans across both frontend and backend technologies, enabling me to develop comprehensive solutions that balance aesthetics with robust functionality. With a diverse portfolio of projects, I’ve consistently demonstrated my ability to tackle real-world challenges through innovative and impactful applications.</p>
+      <div className="w-full mt-7 grid lg:grid-cols-1 grid-cols-1 gap-10">
+        <p className="lg:ml-[74px] lg:mr-[74px] text-center md:tracking-wider text-md md:text-lg lg:text-lg">I am a full stack developer with a focus on building user-friendly web applications. Currently pursuing a Bachelor's in Computer Science, I continuously work on improving my skills. Through internships and freelance projects, I have developed websites for various clients, gaining valuable experience in the field. I am dedicated to delivering high-quality solutions and contributing effectively to any project.</p>
       </div>
     </div>
   );

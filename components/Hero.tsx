@@ -3,7 +3,7 @@ import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 
 const Hero = () => {
   return (
-    <div className="pb-20 pt-36">
+    <div className="sm:pb-[135px] sm:pt-[155px] lg:pb-[135px]">
       <div>
         <Spotlight
           className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
@@ -29,7 +29,7 @@ const Hero = () => {
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <TextGenerateEffect
             words="Hello. I'm Mair. A Fullstack Web Developer."
-            className="text-center text-[40px] md:text-5xl lg:text-6xl mt-10"
+            className="text-center text-[35px] md:text-5xl lg:text-6xl mt-10"
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-xl">

@@ -1,85 +1,33 @@
-"use client";
-
-import { FaLocationArrow } from "react-icons/fa6";
 import { projects } from "@/data";
-import { PinContainer } from "./ui/Pin";
-import Image from 'next/image';
 
 const Projects = () => {
-  const handleClick = (link: string) => {
-    window.open(link, "_blank");
-  };
-
   return (
-    <div className="py-20">
-      <h1 className="heading">
-        Recent{" "}
-        <span className="text-purple">projects</span>
+    <div className="pt-20 w-full">
+      <h1 className="heading text-3xl md:text-3xl lg:text-[43px]">
+        Recent projects
       </h1>
-      <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
-        {projects.map((item) => (
+
+      <div className="w-full mt-5 grid lg:grid-cols-1 grid-cols-1 gap-10 lg:ml-[68px] lg:mr-[155px]">
+        {projects.map((card) => (
           <div
-            className="lg:min-h-[28.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
-            key={item.id}
-            onClick={() => handleClick(item.link)}
+            className="flex-1 text-black dark:text-white border-neutral-200 dark:border-slate-800"
+            key={card.id}
           >
-            <PinContainer
-              title="/github.com"
-              href="https://github.com/mairfarooq21"
-            >
-              <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
-                <div
-                  className="relative w-full h-full overflow-hidden lg:rounded-3xl"
-                  style={{ backgroundColor: "#13162D" }}
-                >
-                  <Image src="/bg.png" alt="bgimg" fill sizes="100vw" />
+            <div className="flex lg:flex-col flex-col lg:items-center p-3 md:p-5 lg:p-2">
+              <div className="lg:ms-5">
+                <div className="flex justify-between items-center w-full">
+                  <h1 className="text-start text-xl md:text-2xl font-bold">
+                      {card.title}
+                  </h1>
+                  <a href={card.link} className="hover:underline flex text-right text-md md:text-2xl lg:text-[20px] font-semibold lg:mr-[153px]">
+                    Link
+                  </a>
                 </div>
-                <Image
-                  src={item.img}
-                  fill 
-                  sizes="100vw"
-                  alt="cover"
-                  className="z-10 absolute bottom-0"
-                />
+                <p className="text-start md:tracking-wider text-sm md:text-lg lg:text-lg mt-3 lg:mr-[135px]">
+                  {card.des}
+                </p>
               </div>
-
-              <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
-                {item.title}
-              </h1>
-
-              <p
-                className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2"
-                style={{
-                  color: "#BEC1DD",
-                  margin: "1vh 0",
-                }}
-              >
-                {item.des}
-              </p>
-
-              <div className="flex items-center justify-between mt-7 mb-3">
-                <div className="flex items-center">
-                  {item.iconLists.map((icon, index) => (
-                    <div
-                      key={index}
-                      className="border border-white/[.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
-                      style={{
-                        transform: `translateX(-${5 * index + 2}px)`,
-                      }}
-                    >
-                      <Image  src={icon} alt="icon5" className="p-2" fill sizes="100vw" />
-                    </div>
-                  ))}
-                </div>
-
-                <div className="flex justify-center items-center">
-                  <p className="flex lg:text-lg md:text-xs text-sm text-purple">
-                    Link here
-                  </p>
-                  <FaLocationArrow className="ms-3" color="#CBACF9" />
-                </div>
-              </div>
-            </PinContainer>
+            </div>
           </div>
         ))}
       </div>

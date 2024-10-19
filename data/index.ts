@@ -3,40 +3,76 @@ export const navItems = [
     { name: "Projects", link: "#projects" },
     { name: "Experience", link: "#experience" },
     { name: "Contact", link: "#contact" },
+    { name: "Skills", link: "#skills" },
+
   ];
   
   export const projects = [
     {
       id: 1,
       title: "Ecommerce Website",
-      des: "NovaMart is an ecommerce platform designed for efficiency and scalability it combines modern web technologies to deliver a fast, user-friendly interface for both customers and administrators.",
-      img: "/p1.png",
-      iconLists: ["/re.svg", "/f.svg", "/tail.svg"],
+      des: "Developed a complete ecommerce website using React.js, Tailwind CSS, and Firebase. The site features user authentication and integrated payment gateways for a seamless shopping experience. With real-time database integration, I ensured efficient management of user data, products, and orders, all while delivering a modern and responsive design.",
       link: "https://github.com/mairfarooq21/ecommerce-store",
     },
     {
       id: 2,
       title: "Fitness Tracker App",
-      des: "FitTrack is a MERN stack web-app that helps users track calories and workouts effortlessly. With an intuitive interface, you can log workouts and monitor progress in real-time.",
-      img: "/p2.png",
-      iconLists: ["/re.svg", "/node.svg", "/ex.svg", "/mdb.svg", "/tail.svg"],
+      des: "I built a fitness tracker app using the MERN stack, allowing users to log workouts, track calories burned, and monitor progress. The app features user authentication and a user-friendly interface built with React, while Express and Node.js manage the backend, ensuring a scalable and efficient application.",
       link: "https://github.com/mairfarooq21/fitness-tracker",
     },
     {
       id: 3,
       title: "Travel App",
       des: "Hilink is a landing page that not only looks great but also serves as a hands-on project to reinforce one's understanding of these technologies.",
-      img: "/p3.png",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg",],
       link: "https://github.com/mairfarooq21/travel-app",
+    },
+  ];
+
+  export const iconLists = [
+    {
+      id: 1,
+      icons: "/re.svg",
+      title: "ReactJs",
+    },
+    {
+      id: 2,
+      icons: "/tail.svg",
+      title: "TailwinCSS",
+    },
+    {
+      id: 3,
+      icons: "/next.svg",
+      title: "NextJs",
     },
     {
       id: 4,
-      title: "Tech Store",
-      des: "TechZap is a frontend website which sells tech products. This website was built to enhance my ReactJs skills and to showcase an interactive and modern interface with some UI/UX techniques.",
-      img: "/p4.png",
-      iconLists: ["/re.svg", "/tail.svg",],
-      link: "https://github.com/mairfarooq21/techzap",
+      icons: "/node.svg",
+      title: "NodeJs",
+    },
+    {
+      id: 5,
+      icons: "/ex.svg",
+      title: "Express",
+    },
+    {
+      id: 6,
+      icons: "/mdb.svg",
+      title: "MongoDB",
+    },
+    {
+      id: 7,
+      icons: "/psql.svg",
+      title: "PostgreSQL",
+    },
+    {
+      id: 8,
+      icons: "/fgma.svg",
+      title: "Figma",
+    },
+    {
+      id: 9,
+      icons: "/wp.svg",
+      title: "WordPress",
     },
   ];
 
@@ -55,54 +91,56 @@ export const navItems = [
     },
     {
       id: 4,
-      title: "Bootstrap",
-    },
-    {
-      id: 5,
       title: "ReactJs",
     },
     {
-      id: 6,
+      id: 5,
       title: "Tailwind",
     },
     {
-      id: 7,
+      id: 6,
       title: "NextJs",
     },
     {
-      id: 8,
-      title: "Firebase",
-    },
-    {
-      id: 9,
+      id: 7,
       title: "NodeJs",
     },
     {
-      id: 10,
+      id: 8,
       title: "Express",
     },
     {
-      id: 11,
+      id: 9,
       title: "MongoDB",
     },
     {
-      id: 12,
+      id: 10,
+      title: "PostgreSQL",
+    },
+    {
+      id: 11,
       title: "Wordpress",
+    },
+    {
+      id: 12,
+      title: "Figma",
     },
   ];
   
   export const workExperience = [
     {
       id: 1,
-      title: "Freelance - Dreducation consulting",
-      desc: "Developed a study abroad website using WordPress for students applying to universities, where I designed and managed comprehensive pages that provided detailed university information. My focus was on delivering an efficient and user-friendly experience to ensure client satisfaction.",
+      title1: "Web Developer",
+      title2: "Dreducation consulting",
+      desc: "Developed a study abroad website using WordPress, aimed at assisting students applying to universities. I designed and managed comprehensive pages featuring detailed university information, ensuring easy navigation and accessibility. My primary focus was on delivering an efficient, user-friendly experience that catered to both students and administrators, while also meeting the client’s expectations for functionality and design.",
       className: "md:col-span-2",
-      duration: "Mar 2024 - Present",
+      duration: "Mar 2024 - Sep 2024",
     },
     {
       id: 2,
-      title: "Intern - Digitorm",
-      desc: "I developed React.js components for a marketing agency's landing page, built and customized websites using WordPress to meet client needs, and managed Shopify stores, customizing storefronts to improve user experience and engagement, leading to better performance and satisfaction.",
+      title1: "Web Developer Intern",
+      title2: "Digitorm",
+      desc: "I contributed to the development of React.js components for a marketing agency’s landing page, delivering responsive, high-performance interfaces. I customized WordPress websites to meet client needs and managed Shopify storefronts, optimizing functionality and user engagement to improve site performance and satisfaction.",
       className: "md:col-span-2",
       duration: "Jan 2024 - Mar 2024",
     },
@@ -112,16 +150,20 @@ export const navItems = [
     {
       id: 1,
       img: "./link.svg",
-      link: "https://www.linkedin.com/in/syedmair/"
+      link: "https://www.linkedin.com/in/syedmair/",
+      title:  "LinkedIn",
+
     },
     {
       id: 2,
       img: "./git.svg",
-      link: "https://github.com/mairfarooq21"
+      link: "https://github.com/mairfarooq21",
+      title: "GitHub",
     },
     {
       id: 3,
       img: "./insta.svg",
-      link: "https://www.instagram.com/maiirfarooq/"
+      link: "https://www.instagram.com/maiirfarooq/",
+      title: "Instagram",
     },
   ];
