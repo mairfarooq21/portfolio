@@ -8,7 +8,7 @@ const About = () => {
       </h1>
 
       <div className="w-full mt-7 grid lg:grid-cols-1 grid-cols-1 gap-10">
-        <p className="lg:ml-[74px] lg:mr-[74px] text-center md:tracking-wider text-md md:text-lg lg:text-lg">I am a full stack developer with a focus on building user-friendly web applications. Currently pursuing a Bachelor's in Computer Science, I continuously work on improving my skills. Through internships and freelance projects, I have developed websites for various clients, gaining valuable experience in the field. I am dedicated to delivering high-quality solutions and contributing effectively to any project.</p>
+        <p className="lg:ml-[74px] lg:mr-[74px] text-center md:tracking-wider text-md md:text-lg lg:text-lg">I am a full stack developer with a focus on building user-friendly web applications. Currently pursuing a Bachelor&apos;s in Computer Science, I continuously work on improving my skills. Through internships and freelance projects, I have developed websites for various clients, gaining valuable experience in the field. I am dedicated to delivering high-quality solutions and contributing effectively to any project.</p>
       </div>
     </div>
   );
