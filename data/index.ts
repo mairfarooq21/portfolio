@@ -22,9 +22,9 @@ export const navItems = [
     },
     {
       id: 3,
-      title: "Travel App",
-      des: "Hilink is a landing page that not only looks great but also serves as a hands-on project to reinforce one's understanding of these technologies.",
-      link: "https://github.com/mairfarooq21/travel-app",
+      title: "Live Docs",
+      des: "I built Live Docs, a collaborative web app using Next.js, Tailwind CSS, and Liveblocks, enabling real-time document collaboration. The app includes user authentication and features for creating, updating, and deleting documents. It allows multiple users to edit documents simultaneously in real-time, providing a seamless experience.",
+      link: "https://github.com/mairfarooq21/live-docs",
     },
   ];
 
@@ -138,7 +138,7 @@ export const navItems = [
     },
     {
       id: 2,
-      title1: "Web Developer Intern",
+      title1: "Web Development Intern",
       title2: "Digitorm",
       desc: "I contributed to the development of React.js components for a marketing agency’s landing page, delivering responsive, high-performance interfaces. I customized WordPress websites to meet client needs and managed Shopify storefronts, optimizing functionality and user engagement to improve site performance and satisfaction.",
       className: "md:col-span-2",
